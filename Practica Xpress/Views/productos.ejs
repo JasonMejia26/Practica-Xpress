@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Productos</title>
+</head>
+<body>
+
+    <h1 class="title">Lista de Productos</h1>
+    <div class="index">
+        <h2>Productos</h2>
+        <br>
+    <ul>
+        <% for (const producto of productos) { %>
+<li><%= producto.nombre %> - <%= producto.precio %></li>
+<br>
+      <%  } %>
+    </ul>
+    <br>
+    <br>
+    <button type="submit" class="botom"><a href="/agregar-producto">Agregar un Nuevo Producto</a></button>
+    <br>
+    <br>
+    <button type="submit" class="botom"><a href="/">Regresar</a></button>
+    </div>
+</body>
+</html>
